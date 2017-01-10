@@ -38,7 +38,7 @@ set -e
 which flask
 
 # Start the server with a basic sleep!
-nohup python /Users/aleks/PycharmProjects/PigLatin/PigLatinRestServer.py &
+nohup /Users/aleks/PycharmProjects/PigLatin/PigLatinRestServer.py &
 # TODO: Implement this more elegantly
 echo "Waiting for server to start....please standby."
 sleep 15
