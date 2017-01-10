@@ -16,20 +16,21 @@ curl -X POST localhost:80/translate -d "translate this please"
 ```
 
 # Running the Microservice
-3. You can kick it off using the python script itself:
+1. You can kick it off using the python script itself:
 ```
 python PigLatinRestServer.py
 ```
 OR
-You can use the included install script that will also install flask. It's idempotent so worries about
+2. You can use the included install script that will also install flask. It's idempotent so worries about
 running it.
 ```
 ./install_and_run.sh
 ```
 
-4. Stopping/restarting the microservice
+# Stopping/restarting the microservice
 kill -9 the process and start the script again
 
-5. Future work
-Logging improvements, both in the app and at the level of running the application
-Improved testing and handling of edge cases in the core logic
+# Future work
+- Logging improvements, both in the app and at the level of running the application
+- Improved testing and handling of edge cases in the core logic
+- Stop/Restart functionality in the script
