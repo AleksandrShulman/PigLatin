@@ -24,4 +24,4 @@ def get_translate():
     return "{0}\n".format(result), 200
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=80, debug=True)
+    app.run(host="localhost", port=80, debug=False)

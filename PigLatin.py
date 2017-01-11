@@ -39,7 +39,7 @@ class PigLatin(object):
     :param word: a string
     :return: string - the word in PigLatin
     """
-    if PigLatin.beginsWithVowel(word):
+    if PigLatin.begins_with_vowel(word):
       # Rule is to add "yay" to anything that begins with a vowel
       return word + "yay"
     else:
@@ -58,15 +58,15 @@ class PigLatin(object):
     pass
 
   @staticmethod
-  def beginsWithVowel(word):
+  def begins_with_vowel(word):
     """
     Given a word, this will tell us if it's a vowel or a silent letter
+    :param word: a word to examine
     :return: Whether it starts with a vowel
     """
     if word[0] in PigLatin.VOWELS:
       return True
-
     return False
 
 if __name__ == "__main__":
-  print 'hi'
+  pass

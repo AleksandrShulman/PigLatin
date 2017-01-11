@@ -1,5 +1,6 @@
 # PigLatin
-A REST service running on port :80 that will translate english into Pig-Latin.
+A REST service running on port :80 that will translate english into Pig-Latin. It can accept simple words and phrases,
+all the way to full paragraphs.
 
 # Usage
 There are two modes of interaction:
