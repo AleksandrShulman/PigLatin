@@ -17,12 +17,12 @@ curl -X POST localhost:80/translate -d "translate this please"
 ```
 
 # Running the Microservice
-1. You can kick it off using the python script itself:
+- You can kick it off using the python script itself. Make sure to run as root as it requires access to port 80:
 ```
 python PigLatinRestServer.py
 ```
 OR
-2. You can use the included install script that will also install flask. It's idempotent so worries about
+- You can use the included install script that will also install flask. It's idempotent so worries about
 running it repeatedly. Make sure to run as root.
 ```
 ./install_and_run.sh
