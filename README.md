@@ -1,5 +1,5 @@
 # PigLatin
-A REST service running on port :80 that will translate english into Pig-Latin. It can accept simple words and phrases,
+A REST service running on port :80 that will translate English into Pig-Latin. It can accept simple words and phrases,
 all the way to full paragraphs.
 
 # Usage
@@ -22,16 +22,16 @@ curl -X POST localhost:80/translate -d "translate this please"
 python PigLatinRestServer.py
 ```
 OR
-- You can use the included install script that will also install flask. It's idempotent so worries about
-running it repeatedly. Make sure to run as root.
+- You can use the included install script that will also install flask. It's idempotent so a user may
+run it repeatedly. Make sure to run as root.
 ```
 ./install_and_run.sh
 ```
 
-# Stopping/restarting the microservice
-kill -9 the process and start the script again
+# Stopping/Restarting the Microservice
+- Kill -9 the process and start the script again
 
-# Future work
+# Future Work
 - Logging improvements, both in the app and at the level of running the application
 - Improved testing and handling of edge cases in the core logic
 - Stop/Restart functionality in the script
