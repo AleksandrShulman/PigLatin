@@ -43,8 +43,13 @@ class PigLatinTranslationTest(unittest.TestCase):
     self._compare_input_output_lists(input_list, output_list)
 
   def test_simple_sentence_with_punction(self):
-    text = "hi my name is Aleks!"
-    print PigLatin.translate(text)
+    """
+    Test what happens if there are multiple sentences
+    """
+    text = "hi my name is Aleks! I instruct machines to do things, yay!"
+    expected_test = "ihay ymay amenay isyay Aleksyay! " \
+                    "Iyay instructyay achinesmay otay oday ingsthay, ayyay!"
+    self.assertEqual(expected_test, PigLatin.translate(text))
 
   def test_y_as_vowel(self):
     """
