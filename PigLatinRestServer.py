@@ -26,4 +26,5 @@ def get_translate():
 if __name__ == '__main__':
     # TODO: Add arguments for running in production mode vs. running in test mode.
     # test/debug mode will have debug enabled and run on a non-restricted port
-    app.run(host="localhost", port=80, debug=False)
+    # toggle between localhost and 0.0.0.0 for testing and production, respectively
+    app.run(host="0.0.0.0", port=80, debug=False)
