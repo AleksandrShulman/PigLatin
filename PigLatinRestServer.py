@@ -19,9 +19,11 @@ def get_translate():
     try:
       result = PigLatin.translate(text_string)
     except Exception as e:
-        #TODO: Log bad request
+        #TODO: Adding logging framework to log bad requests
         return "Bad request: {0}".format(e.message), 400
     return "{0}\n".format(result), 200
 
 if __name__ == '__main__':
+    # TODO: Add arguments for running in production mode vs. running in test mode.
+    # test/debug mode will have debug enabled and run on a non-restricted port
     app.run(host="localhost", port=80, debug=False)
