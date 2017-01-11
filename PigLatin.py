@@ -1,6 +1,10 @@
 import re
 
 class PigLatin(object):
+  """
+  The kernel of the application. This will do the heavy lifting when it comes to
+  the translation of words and phrases
+  """
 
   VOWELS = {'a', 'e', 'i', 'o', 'u','A', 'E', 'I', 'O', 'U'}
 
