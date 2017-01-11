@@ -28,7 +28,8 @@ class PigLatin(object):
 
    # General strategy: Create a regex that matches words. Replace a word with
    # its translated equivalent.
-    words_to_replace = list([x for x in set(re.split("[\t\n\s:/,.;!?:&-]", input)) if len(x)>0 ])
+    words_to_replace = list([x for x in set(re.split("[\t\n\s:/,.;!?:&-]", input))
+                             if len(x)>0])
     for word in words_to_replace:
       input = input.replace(word, PigLatin.translate_word(word), 1)
 

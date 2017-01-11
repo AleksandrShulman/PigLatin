@@ -1,6 +1,7 @@
 import unittest
 from PigLatin import PigLatin
 
+
 class PigLatinTranslationTest(unittest.TestCase):
   """
   Class to verify that translation occur properly.
@@ -51,6 +52,7 @@ class PigLatinTranslationTest(unittest.TestCase):
     """
     input_list = ['my', 'buy']
     output_list = ['ymay', 'uybay']
+
     self._compare_input_output_lists(input_list, output_list)
 
   @unittest.skip("Correct behavior not yet implemented")
@@ -61,6 +63,7 @@ class PigLatinTranslationTest(unittest.TestCase):
     input_list = ["A house", "What a house", "I have a house", "He has a house"]
     output_list = ["Ayay ousehay", "Atwhay ayay ousehay",
                    "Iyay avehay ayay ousehay", "Ehay ashay ayay ousehay"]
+
     self._compare_input_output_lists(input_list, output_list)
 
   @unittest.skip("Correct behavior not yet implemented")
