@@ -4,13 +4,13 @@ all the way to full paragraphs.
 
 # Usage
 There are two modes of interaction:
-1. For shorter requests, use the GET verb at the /translate URI, with the string URL-encoded in the variable 'input'
+- For shorter requests, use the GET verb at the /translate URI, with the string URL-encoded in the variable 'input'
 Example:
 ```
 curl -X GET localhost:80/translate?input=$(urlencode "translate this please")
 ```
 
-2. For longer requests (>1024 characters), use the POST verb at the same /translate URI, with the text in the body.
+- For longer requests (>1024 characters), use the POST verb at the same /translate URI, with the text in the body.
 Example:
 ```
 curl -X POST localhost:80/translate -d "translate this please"
@@ -23,7 +23,7 @@ python PigLatinRestServer.py
 ```
 OR
 2. You can use the included install script that will also install flask. It's idempotent so worries about
-running it.
+running it repeatedly. Make sure to run as root.
 ```
 ./install_and_run.sh
 ```
